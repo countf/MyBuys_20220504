@@ -826,7 +826,7 @@
                             <form action="/updateImage.do" method="post">
                                 <input type="text" name="PicturesId" placeholder="${imageData.picturesId}" class="form-control">
                                 <input type="text" name="title" placeholder="${imageData.title}" class="form-control">
-                                <input type="text" name="name" placeholder="${imageData.title}" class="form-control">
+                                <input type="text" name="name" placeholder="${imageData.name}" class="form-control">
                                 <input type="text" name="path" placeholder="${imageData.path}" class="form-control">
                                 <input type="text" name="createtime" placeholder="${imageData.createtime}" class="form-control">
                                 <input type="text" name="masterId" placeholder="${imageData.masterId}" class="form-control">
@@ -857,9 +857,6 @@
                     </div>
                 </div>
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-
-
-
                     <div class="card">
                         <div class="card-body">
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
@@ -879,6 +876,16 @@
                 </div>
             </div>
             <!-- Products view Start -->
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+
+                <form action="/uploadImage.do" method="post" enctype="multipart/form-data" >
+                    <img src="${imageName}">
+                    <p>${imageName}</p>
+                    <input type="file" name="file" value="选择图片">
+                    <input type="text" name="imageId" placeholder="输入要修改的iD">
+                    <input type="submit" class="btn btn-primary" value="上传图片">
+                </form>
+            </div>
 
 
             <div class="ad-footer-btm">

@@ -20,6 +20,8 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -77,6 +79,11 @@ public class test01 {
         return multipartFile.getOriginalFilename();
     }
 
+    @RequestMapping("/test03.do")
+    public String  inserttest1(HttpServletRequest request) throws IOException {
+
+        return request.getServletContext().getRealPath("/static/picture");
+    }
     @RequestMapping("delete.do")
     public String delete(){
         File file = new File("D:/study/java/javaweb/untitled/MyBuys_20220504/src/main/webapp/static/image/OW)W73MA{V%$ZZ8[)WCY6~V1.jpg");
@@ -86,4 +93,9 @@ public class test01 {
         }
         return "file no save";
     }
+
+    public static void main(String[] args) {
+        System.out.println(System.getProperty("user.dir"));
+    }
+
 }
