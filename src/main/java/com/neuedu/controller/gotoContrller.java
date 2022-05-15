@@ -26,4 +26,11 @@ public class gotoContrller {
     public void backIndex(HttpServletResponse response) throws IOException {
         response.sendRedirect("/index.html");
     }
+
+    //·µ»Ø×¢²á
+    @RequestMapping("goRegister.do")
+    public ModelAndView gotoRegister(ModelAndView modelAndView){
+        modelAndView.setViewName("register");
+        return modelAndView;
+    }
 }

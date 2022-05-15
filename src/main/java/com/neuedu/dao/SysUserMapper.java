@@ -31,6 +31,16 @@ public interface SysUserMapper {
     @InsertProvider(type=SysUserSqlProvider.class, method="insertSelective")
     int insertSelective(SysUser record);
 
+
+    @Insert({
+            "insert into sys_user (USERNAME, ",
+            "PASSWORD, EMAIL,NAME,PHONE,MAN_BUYER_ID)",
+            "values (#{username,jdbcType=VARCHAR}, ",
+            "#{password,jdbcType=VARCHAR},#{email,jdbcType=VARCHAR},#{name,jdbcType=VARCHAR},",
+            "#{phone,jdbcType=VARCHAR}, #{manBuyerId,jdbcType=INTEGER})"
+    })
+    int register(SysUser record);
+
     @Select({
         "select",
         "USER_ID, USERNAME, PASSWORD, NAME, RIGHTS, ROLE_ID, LAST_LOGIN, IP, STATUS, ",

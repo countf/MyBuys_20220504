@@ -25,6 +25,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Set;
 
 @RestController
 public class test01 {
@@ -95,7 +98,21 @@ public class test01 {
     }
 
     public static void main(String[] args) {
-        System.out.println(System.getProperty("user.dir"));
+//        HashMap<String, Integer> stringIntegerHashMap = new HashMap<>();
+//        stringIntegerHashMap.put("1",111);
+//        stringIntegerHashMap.put("2",222);
+//        stringIntegerHashMap.put("3",333);
+//        stringIntegerHashMap.put("4",444);
+//        Set<String> keySet = stringIntegerHashMap.keySet();
+//        Iterator<String> iterator = keySet.iterator();
+//        while (iterator.hasNext()){
+//            String next = iterator.next();
+//            System.out.printf("\n"+stringIntegerHashMap.get(next));
+//
+//        }
+
     }
+
+
 
 }
