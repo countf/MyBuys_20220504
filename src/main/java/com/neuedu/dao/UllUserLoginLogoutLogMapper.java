@@ -1,16 +1,10 @@
 package com.neuedu.dao;
 
 import com.neuedu.entity.UllUserLoginLogoutLog;
-import org.apache.ibatis.annotations.Delete;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.InsertProvider;
-import org.apache.ibatis.annotations.Result;
-import org.apache.ibatis.annotations.Results;
-import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.Update;
-import org.apache.ibatis.annotations.UpdateProvider;
+import org.apache.ibatis.annotations.*;
 import org.apache.ibatis.type.JdbcType;
 
+@Mapper
 public interface UllUserLoginLogoutLogMapper {
     @Delete({
         "delete from ull_user_login_logout_log",

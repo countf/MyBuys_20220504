@@ -20,7 +20,12 @@ public class BrdBrandServiceImpl implements BrdBrandService {
 
     @Override
     public int newBrdBrand(BrdBrand brdBrand) {
-        return brdBrandMapper.insert(brdBrand);
+        return brdBrandMapper.newbra(brdBrand);
+    }
+
+    @Override
+    public int newBrd(BrdBrand brdBrand) {
+        return brdBrandMapper.newbrd(brdBrand);
     }
 
     @Override
@@ -32,5 +37,20 @@ public class BrdBrandServiceImpl implements BrdBrandService {
     public int changeSTSForBrdBrand(int bid, String sts) {
 
         return brdBrandMapper.updateSTSByBId(bid, sts);
+    }
+
+    @Override
+    public int delbrd(int brdId) {
+        return brdBrandMapper.deleteByPrimaryKey(brdId);
+    }
+
+    @Override
+    public BrdBrand selectMid(int mid) {
+        return brdBrandMapper.selectByPrimaryKey(mid);
+    }
+
+    @Override
+    public int updaBrd(BrdBrand brdBrand) {
+        return brdBrandMapper.updateByPrimaryKey(brdBrand);
     }
 }

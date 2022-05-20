@@ -42,6 +42,22 @@ public interface ManManufacturerMapper {
     @Options(useGeneratedKeys = true,keyProperty = "manId",keyColumn = "MAN_ID")
     int insert(ManManufacturer record);
 
+
+
+    @Insert({
+            "insert into man_manufacturer (MAN_ID,NAME_EN, ",
+            "NAME_CN, GMC_REPORT_TYPE, ",
+            "GMC_REPORT_URL,",
+            "DESCRIPTION)",
+            "values (#{manId,jdbcType=INTEGER},#{nameEn,jdbcType=VARCHAR}, ",
+            "#{nameCn,jdbcType=VARCHAR}, #{gmcReportType,jdbcType=VARCHAR}, ",
+            "#{gmcReportUrl,jdbcType=VARCHAR}, ",
+            "#{description,jdbcType=LONGVARCHAR})"
+    })
+    int insertproduct(ManManufacturer record);
+
+
+
     @InsertProvider(type=ManManufacturerSqlProvider.class, method="insertSelective")
     int insertSelective(ManManufacturer record);
 

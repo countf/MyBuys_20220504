@@ -32,8 +32,43 @@ public interface BrdBrandMapper {
     @Options(useGeneratedKeys = true,keyProperty = "brdId",keyColumn = "BRD_ID")
     int insert(BrdBrand record);
 
+
+
+    @Insert({
+            "insert into brd_brand (MAN_ID, ",
+            "NAME_EN, NAME_CN, ",
+            "CREATED_BY, CREATION_DATE, ",
+            "CALL_CNT, REMARK, ",
+            "STS_CD)",
+            "values (#{manId,jdbcType=INTEGER}, ",
+            "#{nameEn,jdbcType=VARCHAR}, #{nameCn,jdbcType=VARCHAR}, ",
+            "#{createdBy,jdbcType=VARCHAR}, #{creationDate,jdbcType=TIMESTAMP}, ",
+            "#{callCnt,jdbcType=INTEGER}, #{remark,jdbcType=VARCHAR}, ",
+            "'A')"
+    })
+    int newbra(BrdBrand record);
+
+
+
     @InsertProvider(type=BrdBrandSqlProvider.class, method="insertSelective")
     int insertSelective(BrdBrand record);
+
+
+    @Insert({
+            "insert into brd_brand (MAN_ID, ",
+            "NAME_EN, NAME_CN, ",
+            "CREATED_BY, CREATION_DATE, ",
+            "CALL_CNT, REMARK, ",
+            "STS_CD)",
+            "values (#{manId,jdbcType=INTEGER}, ",
+            "#{nameEn,jdbcType=VARCHAR}, #{nameCn,jdbcType=VARCHAR}, ",
+            "#{createdBy,jdbcType=VARCHAR}, #{creationDate,jdbcType=TIMESTAMP}, ",
+            "#{lastUpdateBy,jdbcType=VARCHAR}, #{lastUpdateDate,jdbcType=TIMESTAMP}, ",
+            "#{callCnt,jdbcType=INTEGER}, #{remark,jdbcType=VARCHAR}, ",
+            "'A')"
+    })
+    int newbrd(BrdBrand record);
+
 
     @Select({
         "select",
@@ -89,6 +124,7 @@ public interface BrdBrandMapper {
         "update brd_brand",
         "set NAME_EN = #{nameEn,jdbcType=VARCHAR},",
           "NAME_CN = #{nameCn,jdbcType=VARCHAR},",
+            "CREATED_BY = #{createdBy,jdbcType=VARCHAR},",
           "LAST_UPDATE_BY = #{lastUpdateBy,jdbcType=VARCHAR},",
           "LAST_UPDATE_DATE = #{lastUpdateDate,jdbcType=TIMESTAMP},",
           "CALL_CNT = #{callCnt,jdbcType=INTEGER},",

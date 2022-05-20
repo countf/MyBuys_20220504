@@ -1,11 +1,5 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: counter
-  Date: 2022/5/10
-  Time: 17:11
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8" isELIgnored="false" %>
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
@@ -44,7 +38,7 @@
     <header class="header-wrapper main-header">
         <div class="header-inner-wrapper">
             <div class="logo-wrapper">
-                <a href="/backIndex.do" class="admin-logo">
+                <a href="../../index.html" class="admin-logo">
                     <img src="../../static/picture/logo.png" alt="">
                 </a>
             </div>
@@ -225,8 +219,8 @@
                                 <h5>$251</h5>
                             </div>
                             <div class="int-sop-cart-btn">
-                                <a href="cart.html" class="ad-btn">View cart</a>
-                                <a href="checkout.html" class="ad-btn">checkout</a>
+                                <a href="../../cart.html" class="ad-btn">View cart</a>
+                                <a href="" class="ad-btn">checkout</a>
                             </div>
                         </div>
                     </div>
@@ -265,7 +259,7 @@
                         </div>
                     </div>
                     <div class="user-info-wrapper header-links">
-                        <a href="/index.html" class="user-info">
+                        <a href="javascript:void(0);" class="user-info">
                             <img src="../../static/picture/user.jpg" alt="" class="user-img">
                             <div class="blink-animation">
                                 <span class="blink-circle"></span>
@@ -274,24 +268,22 @@
                         </a>
                         <div class="user-info-box">
                             <div class="drop-down-header">
-<%--                                <h4>John Brown</h4>--%>
-<%--                                <p>UI | UX Designer</p>--%>
-                                    <h4>${customers.nameCn}</h4>
-                                    <p>${customers.description}</p>
+                                <h4>John Brown</h4>
+                                <p>UI | UX Designer</p>
                             </div>
                             <ul>
                                 <li>
-                                    <a href="/profile.html">
+                                    <a href="../../profile.html">
                                         <i class="far fa-edit"></i> Edit Profile
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/goInserData.do">
+                                    <a href="../../setting.html">
                                         <i class="fas fa-cog"></i> Settings
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/login.html">
+                                    <a href="../../login.html">
                                         <i class="fas fa-sign-out-alt"></i> logout
                                     </a>
                                 </li>
@@ -307,7 +299,7 @@
         <div class="side-menu-wrap">
             <ul class="main-menu">
                 <li>
-                    <a href="../index.html" class="active">
+                    <a href="javascript:void(0);" class="active">
                             <span class="icon-menu feather-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
                             </span>
@@ -348,7 +340,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="orders.html">
+                    <a href="../../orders.html">
                             <span class="icon-menu feather-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-truck"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
                             </span>
@@ -368,7 +360,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="orders.html">
+                    <a href="../../calendar.html">
                             <span class="icon-menu feather-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
                             </span>
@@ -384,7 +376,7 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-grid nav-icon"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
                             </span>
                         <span class="menu-text">
-                                insertData
+                                inserData
                             </span>
                     </a>
                 </li>
@@ -399,7 +391,7 @@
                     </a>
                     <ul class="sub-menu">
                         <li>
-                            <a href="modal.html">
+                            <a href="../../modal.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -408,7 +400,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="tab.html">
+                            <a href="../../tab.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -417,7 +409,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="carousal.html">
+                            <a href="../../carousal.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -426,7 +418,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="counter.html">
+                            <a href="../../counter.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -435,7 +427,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="accordation.html">
+                            <a href="../../accordation.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -444,7 +436,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="pagination.html">
+                            <a href="../../pagination.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -453,7 +445,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="typography.html">
+                            <a href="../../typography.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -474,7 +466,7 @@
                     </a>
                     <ul class="sub-menu">
                         <li>
-                            <a href="form.html">
+                            <a href="../../form.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -483,7 +475,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="tags.html">
+                            <a href="../../tags.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -504,7 +496,7 @@
                     </a>
                     <ul class="sub-menu">
                         <li>
-                            <a href="basic-table.html">
+                            <a href="../../basic-table.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -513,7 +505,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="advance-table.html">
+                            <a href="../../advance-table.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -522,7 +514,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="data-table.html">
+                            <a href="../../data-table.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -543,7 +535,7 @@
                     </a>
                     <ul class="sub-menu">
                         <li>
-                            <a href="g-map.html">
+                            <a href="../../g-map.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -552,7 +544,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="v-map.html">
+                            <a href="../../v-map.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -563,7 +555,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="chart.html">
+                    <a href="../../chart.html">
                             <span class="icon-menu feather-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pie-chart"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg>
                             </span>
@@ -573,7 +565,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="buttons.html">
+                    <a href="../../buttons.html">
                             <span class="icon-menu feather-icon">
                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-cloud"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
                             </span>
@@ -584,7 +576,7 @@
                 </li>
 
                 <li>
-                    <a href="invoice.html">
+                    <a href="../../invoice.html">
                             <span class="icon-menu feather-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-printer"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
                             </span>
@@ -604,7 +596,7 @@
                     </a>
                     <ul class="sub-menu">
                         <li>
-                            <a href="inbox.html">
+                            <a href="../../inbox.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -613,7 +605,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="email-template.html">
+                            <a href="../../email-template.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -622,7 +614,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="chat.html">
+                            <a href="../../chat.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -644,7 +636,7 @@
                     </a>
                     <ul class="sub-menu">
                         <li>
-                            <a href="login.html">
+                            <a href="../../login.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -653,7 +645,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="register.html">
+                            <a href="../../register.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -662,7 +654,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="profile.html">
+                            <a href="../../profile.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -671,7 +663,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="forgot-pws.html">
+                            <a href="../../forgot-pws.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -692,7 +684,7 @@
                     </a>
                     <ul class="sub-menu show-submenu">
                         <li>
-                            <a href="blank.html">
+                            <a href="../../blank.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -701,7 +693,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="shop.html">
+                            <a href="../../shop.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -710,7 +702,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="product-single.html">
+                            <a href="../../product-single.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -719,7 +711,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="wishlist.html">
+                            <a href="../../wishlist.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -728,7 +720,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="cart.html">
+                            <a href="../../cart.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -737,7 +729,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="checkout.html">
+                            <a href="">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -746,7 +738,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="faq.html">
+                            <a href="../../faq.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -755,7 +747,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="error.html">
+                            <a href="../../error.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -767,7 +759,7 @@
                 </li>
 
                 <li>
-                    <a href="support.html">
+                    <a href="../../support.html">
                             <span class="icon-menu feather-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-voicemail"><circle cx="5.5" cy="11.5" r="4.5"></circle><circle cx="18.5" cy="11.5" r="4.5"></circle><line x1="5.5" y1="16" x2="18.5" y2="16"></line></svg>
                             </span>
@@ -777,7 +769,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="documentation.html">
+                    <a href="../../documentation.html">
                             <span class="icon-menu feather-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-paperclip"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path></svg>
                             </span>
@@ -793,492 +785,71 @@
     <div class="page-wrapper">
         <div class="main-content">
             <!-- Page Title Start -->
-            <div class="row">
-                <div class="colxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                    <div class="page-title-wrapper">
-                        <div class="page-title-box ad-title-box-use">
-                            <h4 class="page-title">Customers</h4>
-                        </div>
-                        <div class="ad-breadcrumb">
-                            <ul>
-                                <li>
-                                    <div class="ad-user-btn">
-                                        <input class="form-control" type="text" placeholder="Search Here..." id="text-input">
-                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 56.966 56.966">
-                                            <path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23
-												s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92
-												c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17
-												s-17-7.626-17-17S14.61,6,23.984,6z"></path>
-                                        </svg>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="add-group">
-                                        <a class="ad-btn">New Customers</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
             <!-- Table Start -->
             <div class="row">
                 <!-- Styled Table Card-->
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                    <div class="card table-card">
-                        <div class="card-header pb-0">
-                            <h4>Customers List</h4>
+                <div class="col-xl-8 col-lg-8">
+                    <div class="card">
+                        <div class="card-header" style="text-align: center">
+                            <h2 >创建品牌商信息</h2>
                         </div>
                         <div class="card-body">
-                            <div class="chart-holder">
-                                <div class="table-responsive">
-                                    <table class="table table-styled mb-0">
-                                        <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>Username</th>
-                                            <th>Phone / Email</th>
-                                            <th>Address</th>
-                                            <th>Rating</th>
-                                            <th>Wallet Balance</th>
-                                            <th>Joining Date</th>
-                                            <th>Action</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
+                            <form action="/customers/inserProduct.do">
+                                <div class="row">
+                                    <div class="col-xl-12 col-lg-12">
+                                        <div class="form-group">
+                                            <label  class="col-form-label">品牌商中文名</label>
+                                            <input class="form-control" type="text" name="nameEn" value="${product.nameEn}">
+                                        </div>
+                                    </div>
 
-
-
-                                        <tr>
-                                            <td>
-                                                <div class="checkbox">
-                                                    <input id="checkboxTest" type="checkbox">
-                                                    <label for="checkbox"></label>
-                                                </div>
-                                            </td>
-                                            <td>${customers.nameEn}</td>
-                                            <td>
-                                                phone<br>
-                                                ${customers.gmcReportUrl}
-                                            </td>
-                                            <td>${customers.description}</td>
-                                            <td>
-                                                <label class="mb-0 badge badge-primary">4.1</label>
-                                            </td>
-                                            <td>$6,415</td>
-                                            <td>${customers.creationDate}</td>
-                                            <td class="relative">
-                                                <a class="action-btn " href="javascript:void(0); ">
-                                                    <svg class="default-size " viewbox="0 0 341.333 341.333 ">
-                                                        <g>
-                                                            <g>
-                                                                <g>
-                                                                    <path d="M170.667,85.333c23.573,0,42.667-19.093,42.667-42.667C213.333,19.093,194.24,0,170.667,0S128,19.093,128,42.667 C128,66.24,147.093,85.333,170.667,85.333z "></path>
-                                                                    <path d="M170.667,128C147.093,128,128,147.093,128,170.667s19.093,42.667,42.667,42.667s42.667-19.093,42.667-42.667 S194.24,128,170.667,128z "></path>
-                                                                    <path d="M170.667,256C147.093,256,128,275.093,128,298.667c0,23.573,19.093,42.667,42.667,42.667s42.667-19.093,42.667-42.667 C213.333,275.093,194.24,256,170.667,256z "></path>
-                                                                </g>
-                                                            </g>
-                                                        </g>
-                                                    </svg>
-                                                </a>
-                                                <div class="action-option ">
-                                                    <ul>
-                                                        <li>
-                                                            <a href="javascript:void(0); "><i class="far fa-edit mr-2 "></i>Edit</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0); "><i class="far fa-trash-alt mr-2 "></i>Delete</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-
-
-
-                                        <tr>
-                                            <td>
-                                                <div class="checkbox">
-                                                    <input id="checkbox" type="checkbox">
-                                                    <label for="checkbox"></label>
-                                                </div>
-                                            </td>
-                                            <td>Scott Henry</td>
-                                            <td>
-                                                +(00) 4512 451<br>
-                                                scotthenry@gamil.com
-                                            </td>
-                                            <td>2210 Grove Street Bethpage, NI 440014</td>
-                                            <td>
-                                                <label class="mb-0 badge badge-primary">4.1</label>
-                                            </td>
-                                            <td>$6,415</td>
-                                            <td>22/06/2021</td>
-                                            <td class="relative">
-                                                <a class="action-btn " href="javascript:void(0); ">
-                                                    <svg class="default-size " viewbox="0 0 341.333 341.333 ">
-                                                        <g>
-                                                            <g>
-                                                                <g>
-                                                                    <path d="M170.667,85.333c23.573,0,42.667-19.093,42.667-42.667C213.333,19.093,194.24,0,170.667,0S128,19.093,128,42.667 C128,66.24,147.093,85.333,170.667,85.333z "></path>
-                                                                    <path d="M170.667,128C147.093,128,128,147.093,128,170.667s19.093,42.667,42.667,42.667s42.667-19.093,42.667-42.667 S194.24,128,170.667,128z "></path>
-                                                                    <path d="M170.667,256C147.093,256,128,275.093,128,298.667c0,23.573,19.093,42.667,42.667,42.667s42.667-19.093,42.667-42.667 C213.333,275.093,194.24,256,170.667,256z "></path>
-                                                                </g>
-                                                            </g>
-                                                        </g>
-                                                    </svg>
-                                                </a>
-                                                <div class="action-option ">
-                                                    <ul>
-                                                        <li>
-                                                            <a href="javascript:void(0); "><i class="far fa-edit mr-2 "></i>Edit</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0); "><i class="far fa-trash-alt mr-2 "></i>Delete</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="checkbox">
-                                                    <input id="checkbox23" type="checkbox">
-                                                    <label for="checkbox23"></label>
-                                                </div>
-                                            </td>
-                                            <td>Mark Wood</td>
-                                            <td>
-                                                +(00) 4512 451<br>
-                                                markwood@gamil.com
-                                            </td>
-                                            <td>2210  sed do eiusmod tempor ut, NI 440022</td>
-                                            <td>
-                                                <label class="mb-0 badge badge-primary">2.2</label>
-                                            </td>
-                                            <td>$2,415</td>
-                                            <td>22/07/2021</td>
-                                            <td class="relative">
-                                                <a class="action-btn " href="javascript:void(0); ">
-                                                    <svg class="default-size " viewbox="0 0 341.333 341.333 ">
-                                                        <g>
-                                                            <g>
-                                                                <g>
-                                                                    <path d="M170.667,85.333c23.573,0,42.667-19.093,42.667-42.667C213.333,19.093,194.24,0,170.667,0S128,19.093,128,42.667 C128,66.24,147.093,85.333,170.667,85.333z "></path>
-                                                                    <path d="M170.667,128C147.093,128,128,147.093,128,170.667s19.093,42.667,42.667,42.667s42.667-19.093,42.667-42.667 S194.24,128,170.667,128z "></path>
-                                                                    <path d="M170.667,256C147.093,256,128,275.093,128,298.667c0,23.573,19.093,42.667,42.667,42.667s42.667-19.093,42.667-42.667 C213.333,275.093,194.24,256,170.667,256z "></path>
-                                                                </g>
-                                                            </g>
-                                                        </g>
-                                                    </svg>
-                                                </a>
-                                                <div class="action-option ">
-                                                    <ul>
-                                                        <li>
-                                                            <a href="javascript:void(0); "><i class="far fa-edit mr-2 "></i>Edit</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0); "><i class="far fa-trash-alt mr-2 "></i>Delete</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="checkbox">
-                                                    <input id="checkbox34" type="checkbox">
-                                                    <label for="checkbox34"></label>
-                                                </div>
-                                            </td>
-                                            <td>Mike Doe</td>
-                                            <td>
-                                                +(00) 4512 451<br>
-                                                mikedoe@gamil.com
-                                            </td>
-                                            <td>4477 labore et dolore magna, NI 440011</td>
-                                            <td>
-                                                <label class="mb-0 badge badge-primary">3.1</label>
-                                            </td>
-                                            <td>$5,415</td>
-                                            <td>12/02/2021</td>
-                                            <td class="relative">
-                                                <a class="action-btn " href="javascript:void(0); ">
-                                                    <svg class="default-size " viewbox="0 0 341.333 341.333 ">
-                                                        <g>
-                                                            <g>
-                                                                <g>
-                                                                    <path d="M170.667,85.333c23.573,0,42.667-19.093,42.667-42.667C213.333,19.093,194.24,0,170.667,0S128,19.093,128,42.667 C128,66.24,147.093,85.333,170.667,85.333z "></path>
-                                                                    <path d="M170.667,128C147.093,128,128,147.093,128,170.667s19.093,42.667,42.667,42.667s42.667-19.093,42.667-42.667 S194.24,128,170.667,128z "></path>
-                                                                    <path d="M170.667,256C147.093,256,128,275.093,128,298.667c0,23.573,19.093,42.667,42.667,42.667s42.667-19.093,42.667-42.667 C213.333,275.093,194.24,256,170.667,256z "></path>
-                                                                </g>
-                                                            </g>
-                                                        </g>
-                                                    </svg>
-                                                </a>
-                                                <div class="action-option ">
-                                                    <ul>
-                                                        <li>
-                                                            <a href="javascript:void(0); "><i class="far fa-edit mr-2 "></i>Edit</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0); "><i class="far fa-trash-alt mr-2 "></i>Delete</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="checkbox">
-                                                    <input id="checkbox44" type="checkbox">
-                                                    <label for="checkbox4"></label>
-                                                </div>
-                                            </td>
-                                            <td>Tom John</td>
-                                            <td>
-                                                +(00) 4512 451<br>
-                                                tomjohn@gamil.com
-                                            </td>
-                                            <td>4877 occaecat cupidatat non proident, NI 2441</td>
-                                            <td>
-                                                <label class="mb-0 badge badge-primary">1.1</label>
-                                            </td>
-                                            <td>$4,411</td>
-                                            <td>11/07/2021</td>
-                                            <td class="relative">
-                                                <a class="action-btn " href="javascript:void(0); ">
-                                                    <svg class="default-size " viewbox="0 0 341.333 341.333 ">
-                                                        <g>
-                                                            <g>
-                                                                <g>
-                                                                    <path d="M170.667,85.333c23.573,0,42.667-19.093,42.667-42.667C213.333,19.093,194.24,0,170.667,0S128,19.093,128,42.667 C128,66.24,147.093,85.333,170.667,85.333z "></path>
-                                                                    <path d="M170.667,128C147.093,128,128,147.093,128,170.667s19.093,42.667,42.667,42.667s42.667-19.093,42.667-42.667 S194.24,128,170.667,128z "></path>
-                                                                    <path d="M170.667,256C147.093,256,128,275.093,128,298.667c0,23.573,19.093,42.667,42.667,42.667s42.667-19.093,42.667-42.667 C213.333,275.093,194.24,256,170.667,256z "></path>
-                                                                </g>
-                                                            </g>
-                                                        </g>
-                                                    </svg>
-                                                </a>
-                                                <div class="action-option ">
-                                                    <ul>
-                                                        <li>
-                                                            <a href="javascript:void(0); "><i class="far fa-edit mr-2 "></i>Edit</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0); "><i class="far fa-trash-alt mr-2 "></i>Delete</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="checkbox">
-                                                    <input id="checkbox22" type="checkbox">
-                                                    <label for="checkbox"></label>
-                                                </div>
-                                            </td>
-                                            <td>Scott Henry</td>
-                                            <td>
-                                                +(00) 4512 451<br>
-                                                scotthenry@gamil.com
-                                            </td>
-                                            <td>2210 Grove Street Bethpage, NI 440014</td>
-                                            <td>
-                                                <label class="mb-0 badge badge-primary">4.1</label>
-                                            </td>
-                                            <td>$6,415</td>
-                                            <td>22/06/2021</td>
-                                            <td class="relative">
-                                                <a class="action-btn " href="javascript:void(0); ">
-                                                    <svg class="default-size " viewbox="0 0 341.333 341.333 ">
-                                                        <g>
-                                                            <g>
-                                                                <g>
-                                                                    <path d="M170.667,85.333c23.573,0,42.667-19.093,42.667-42.667C213.333,19.093,194.24,0,170.667,0S128,19.093,128,42.667 C128,66.24,147.093,85.333,170.667,85.333z "></path>
-                                                                    <path d="M170.667,128C147.093,128,128,147.093,128,170.667s19.093,42.667,42.667,42.667s42.667-19.093,42.667-42.667 S194.24,128,170.667,128z "></path>
-                                                                    <path d="M170.667,256C147.093,256,128,275.093,128,298.667c0,23.573,19.093,42.667,42.667,42.667s42.667-19.093,42.667-42.667 C213.333,275.093,194.24,256,170.667,256z "></path>
-                                                                </g>
-                                                            </g>
-                                                        </g>
-                                                    </svg>
-                                                </a>
-                                                <div class="action-option ">
-                                                    <ul>
-                                                        <li>
-                                                            <a href="javascript:void(0); "><i class="far fa-edit mr-2 "></i>Edit</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0); "><i class="far fa-trash-alt mr-2 "></i>Delete</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="checkbox">
-                                                    <input id="checkbox24" type="checkbox">
-                                                    <label for="checkbox24"></label>
-                                                </div>
-                                            </td>
-                                            <td>Mark Wood</td>
-                                            <td>
-                                                +(00) 4512 451<br>
-                                                markwood@gamil.com
-                                            </td>
-                                            <td>2210  sed do eiusmod tempor ut, NI 440022</td>
-                                            <td>
-                                                <label class="mb-0 badge badge-primary">2.2</label>
-                                            </td>
-                                            <td>$2,415</td>
-                                            <td>22/07/2021</td>
-                                            <td class="relative">
-                                                <a class="action-btn " href="javascript:void(0); ">
-                                                    <svg class="default-size " viewbox="0 0 341.333 341.333 ">
-                                                        <g>
-                                                            <g>
-                                                                <g>
-                                                                    <path d="M170.667,85.333c23.573,0,42.667-19.093,42.667-42.667C213.333,19.093,194.24,0,170.667,0S128,19.093,128,42.667 C128,66.24,147.093,85.333,170.667,85.333z "></path>
-                                                                    <path d="M170.667,128C147.093,128,128,147.093,128,170.667s19.093,42.667,42.667,42.667s42.667-19.093,42.667-42.667 S194.24,128,170.667,128z "></path>
-                                                                    <path d="M170.667,256C147.093,256,128,275.093,128,298.667c0,23.573,19.093,42.667,42.667,42.667s42.667-19.093,42.667-42.667 C213.333,275.093,194.24,256,170.667,256z "></path>
-                                                                </g>
-                                                            </g>
-                                                        </g>
-                                                    </svg>
-                                                </a>
-                                                <div class="action-option ">
-                                                    <ul>
-                                                        <li>
-                                                            <a href="javascript:void(0); "><i class="far fa-edit mr-2 "></i>Edit</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0); "><i class="far fa-trash-alt mr-2 "></i>Delete</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="checkbox">
-                                                    <input id="checkbox33" type="checkbox">
-                                                    <label for="checkbox33"></label>
-                                                </div>
-                                            </td>
-                                            <td>Mike Doe</td>
-                                            <td>
-                                                +(00) 4512 451<br>
-                                                mikedoe@gamil.com
-                                            </td>
-                                            <td>4477 labore et dolore magna, NI 440011</td>
-                                            <td>
-                                                <label class="mb-0 badge badge-primary">3.1</label>
-                                            </td>
-                                            <td>$5,415</td>
-                                            <td>12/02/2021</td>
-                                            <td class="relative">
-                                                <a class="action-btn " href="javascript:void(0); ">
-                                                    <svg class="default-size " viewbox="0 0 341.333 341.333 ">
-                                                        <g>
-                                                            <g>
-                                                                <g>
-                                                                    <path d="M170.667,85.333c23.573,0,42.667-19.093,42.667-42.667C213.333,19.093,194.24,0,170.667,0S128,19.093,128,42.667 C128,66.24,147.093,85.333,170.667,85.333z "></path>
-                                                                    <path d="M170.667,128C147.093,128,128,147.093,128,170.667s19.093,42.667,42.667,42.667s42.667-19.093,42.667-42.667 S194.24,128,170.667,128z "></path>
-                                                                    <path d="M170.667,256C147.093,256,128,275.093,128,298.667c0,23.573,19.093,42.667,42.667,42.667s42.667-19.093,42.667-42.667 C213.333,275.093,194.24,256,170.667,256z "></path>
-                                                                </g>
-                                                            </g>
-                                                        </g>
-                                                    </svg>
-                                                </a>
-                                                <div class="action-option ">
-                                                    <ul>
-                                                        <li>
-                                                            <a href="javascript:void(0); "><i class="far fa-edit mr-2 "></i>Edit</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0); "><i class="far fa-trash-alt mr-2 "></i>Delete</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="checkbox">
-                                                    <input id="checkbox4" type="checkbox">
-                                                    <label for="checkbox4"></label>
-                                                </div>
-                                            </td>
-                                            <td>Tom John</td>
-                                            <td>
-                                                +(00) 4512 451<br>
-                                                tomjohn@gamil.com
-                                            </td>
-                                            <td>4877 occaecat cupidatat non proident, NI 2441</td>
-                                            <td>
-                                                <label class="mb-0 badge badge-primary">1.1</label>
-                                            </td>
-                                            <td>$4,411</td>
-                                            <td>11/07/2021</td>
-                                            <td class="relative">
-                                                <a class="action-btn " href="javascript:void(0); ">
-                                                    <svg class="default-size " viewbox="0 0 341.333 341.333 ">
-                                                        <g>
-                                                            <g>
-                                                                <g>
-                                                                    <path d="M170.667,85.333c23.573,0,42.667-19.093,42.667-42.667C213.333,19.093,194.24,0,170.667,0S128,19.093,128,42.667 C128,66.24,147.093,85.333,170.667,85.333z "></path>
-                                                                    <path d="M170.667,128C147.093,128,128,147.093,128,170.667s19.093,42.667,42.667,42.667s42.667-19.093,42.667-42.667 S194.24,128,170.667,128z "></path>
-                                                                    <path d="M170.667,256C147.093,256,128,275.093,128,298.667c0,23.573,19.093,42.667,42.667,42.667s42.667-19.093,42.667-42.667 C213.333,275.093,194.24,256,170.667,256z "></path>
-                                                                </g>
-                                                            </g>
-                                                        </g>
-                                                    </svg>
-                                                </a>
-                                                <div class="action-option ">
-                                                    <ul>
-                                                        <li>
-                                                            <a href="javascript:void(0); "><i class="far fa-edit mr-2 "></i>Edit</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0); "><i class="far fa-trash-alt mr-2 "></i>Delete</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
                                 </div>
-                            </div>
-                            <div class="text-right">
-                                <nav class="d-inline-block">
-                                    <ul class="pagination mb-0 ">
-                                        <li class="page-item disabled ">
-                                            <a class="page-link" href="javascript:void(0);" tabindex="-1"><i class="fas fa-chevron-left"></i></a>
-                                        </li>
-                                        <li class="page-item active "><a class="page-link " href="javascript:void(0); ">1</a></li>
-                                        <li class="page-item ">
-                                            <a class="page-link " href="javascript:void(0); ">2</a>
-                                        </li>
-                                        <li class="page-item "><a class="page-link " href="javascript:void(0); ">3</a></li>
-                                        <li class="page-item ">
-                                            <a class="page-link " href="javascript:void(0); "><i class="fas fa-chevron-right "></i></a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
+                                <div class="row">
+                                    <div class="col-xl-12 col-lg-12">
+                                        <div class="form-group">
+                                            <label  class="col-form-label">品牌商英文名</label>
+                                            <input class="form-control" type="text" name="nameCn" value="${product.nameCn}">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-12 col-lg-12">
+                                        <div class="form-group">
+                                            <label  class="col-form-label">品牌商认证类型</label>
+                                            <input class="form-control" type="text" name="gmcReportType" value="${product.description}">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-12 col-lg-12">
+                                        <div class="form-group">
+                                            <label  class="col-form-label">证书地址</label>
+                                            <input class="form-control" type="text" name="gmcReportUrl" value="${product.gmcReportType}">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="form-group">
+                                    <label  class="col-form-label">公司介绍</label>
+                                    <input class="form-control" type="text" name="description" value="${product.gmcReportUrl}" id="password-input">
+                                </div>
+
+                                <div class="form-group mb-0" style="text-align: center">
+                                    <button class="btn btn-primary squer-btn mt-2 mr-2" type="submit">保存</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
+
+
             </div>
 
 
-            <div class="ad-footer-btm">
-                <p>Copyright &copy; 2021.Company name All rights reserved.<a target="_blank" href="https://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
-            </div>
+
         </div>
     </div>
 </div>

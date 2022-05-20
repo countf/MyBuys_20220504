@@ -1,11 +1,5 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: counter
-  Date: 2022/5/11
-  Time: 19:27
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8" isELIgnored="false" %>
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
@@ -27,10 +21,6 @@
     <link rel="stylesheet" type="text/css" href="../../static/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../../static/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../../static/css/icofont.min.css">
-    <link rel="stylesheet" href="../../static/css/swiper.min.css">
-    <!--Page Specific -->
-    <link rel="stylesheet" type="text/css" href="../../static/css/nice-select.css">
-    <!--Custom Style -->
     <link rel="stylesheet" type="text/css" href="../../static/css/style.css">
     <link rel="stylesheet" id="theme-change" type="text/css" href="">
 </head>
@@ -48,7 +38,7 @@
     <header class="header-wrapper main-header">
         <div class="header-inner-wrapper">
             <div class="logo-wrapper">
-                <a href="index.html" class="admin-logo">
+                <a href="../../index.html" class="admin-logo">
                     <img src="../../static/picture/logo.png" alt="">
                 </a>
             </div>
@@ -229,8 +219,8 @@
                                 <h5>$251</h5>
                             </div>
                             <div class="int-sop-cart-btn">
-                                <a href="cart.html" class="ad-btn">View cart</a>
-                                <a href="checkout.html" class="ad-btn">checkout</a>
+                                <a href="../../cart.html" class="ad-btn">View cart</a>
+                                <a href="" class="ad-btn">checkout</a>
                             </div>
                         </div>
                     </div>
@@ -280,21 +270,20 @@
                             <div class="drop-down-header">
                                 <h4>John Brown</h4>
                                 <p>UI | UX Designer</p>
-
                             </div>
                             <ul>
                                 <li>
-                                    <a href="profile.html">
+                                    <a href="../../profile.html">
                                         <i class="far fa-edit"></i> Edit Profile
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/goInserData.do">
+                                    <a href="../../setting.html">
                                         <i class="fas fa-cog"></i> Settings
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="login.html">
+                                    <a href="../../login.html">
                                         <i class="fas fa-sign-out-alt"></i> logout
                                     </a>
                                 </li>
@@ -333,7 +322,7 @@
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
-                                         brdnd
+                                        brdnd
                                     </span>
                             </a>
                         </li>
@@ -351,7 +340,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="orders.html">
+                    <a href="../../orders.html">
                             <span class="icon-menu feather-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-truck"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
                             </span>
@@ -371,7 +360,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="calendar.html">
+                    <a href="../../calendar.html">
                             <span class="icon-menu feather-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
                             </span>
@@ -382,12 +371,12 @@
                 </li>
 
                 <li>
-                    <a href="">
+                    <a href="/goInserData.do">
                             <span class="icon-menu feather-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-grid nav-icon"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
                             </span>
                         <span class="menu-text">
-                                insertData
+                                inserData
                             </span>
                     </a>
                 </li>
@@ -402,7 +391,7 @@
                     </a>
                     <ul class="sub-menu">
                         <li>
-                            <a href="modal.html">
+                            <a href="../../modal.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -411,7 +400,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="tab.html">
+                            <a href="../../tab.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -420,7 +409,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="carousal.html">
+                            <a href="../../carousal.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -429,7 +418,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="counter.html">
+                            <a href="../../counter.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -438,7 +427,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="accordation.html">
+                            <a href="../../accordation.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -447,7 +436,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="pagination.html">
+                            <a href="../../pagination.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -456,7 +445,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="typography.html">
+                            <a href="../../typography.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -477,7 +466,7 @@
                     </a>
                     <ul class="sub-menu">
                         <li>
-                            <a href="form.html">
+                            <a href="../../form.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -486,7 +475,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="tags.html">
+                            <a href="../../tags.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -507,7 +496,7 @@
                     </a>
                     <ul class="sub-menu">
                         <li>
-                            <a href="basic-table.html">
+                            <a href="../../basic-table.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -516,7 +505,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="advance-table.html">
+                            <a href="../../advance-table.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -525,7 +514,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="data-table.html">
+                            <a href="../../data-table.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -546,7 +535,7 @@
                     </a>
                     <ul class="sub-menu">
                         <li>
-                            <a href="g-map.html">
+                            <a href="../../g-map.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -555,7 +544,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="v-map.html">
+                            <a href="../../v-map.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -566,7 +555,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="chart.html">
+                    <a href="../../chart.html">
                             <span class="icon-menu feather-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pie-chart"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg>
                             </span>
@@ -576,7 +565,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="buttons.html">
+                    <a href="../../buttons.html">
                             <span class="icon-menu feather-icon">
                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-cloud"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
                             </span>
@@ -587,7 +576,7 @@
                 </li>
 
                 <li>
-                    <a href="invoice.html">
+                    <a href="../../invoice.html">
                             <span class="icon-menu feather-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-printer"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
                             </span>
@@ -607,7 +596,7 @@
                     </a>
                     <ul class="sub-menu">
                         <li>
-                            <a href="inbox.html">
+                            <a href="../../inbox.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -616,7 +605,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="email-template.html">
+                            <a href="../../email-template.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -625,7 +614,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="chat.html">
+                            <a href="../../chat.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -647,7 +636,7 @@
                     </a>
                     <ul class="sub-menu">
                         <li>
-                            <a href="login.html">
+                            <a href="../../login.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -656,7 +645,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="register.html">
+                            <a href="../../register.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -665,7 +654,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="profile.html">
+                            <a href="../../profile.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -674,7 +663,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="forgot-pws.html">
+                            <a href="../../forgot-pws.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -695,7 +684,7 @@
                     </a>
                     <ul class="sub-menu show-submenu">
                         <li>
-                            <a href="blank.html">
+                            <a href="../../blank.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -704,7 +693,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="shop.html">
+                            <a href="../../shop.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -713,7 +702,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="product-single.html">
+                            <a href="../../product-single.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -722,7 +711,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="wishlist.html">
+                            <a href="../../wishlist.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -731,7 +720,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="cart.html">
+                            <a href="../../cart.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -740,7 +729,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="checkout.html">
+                            <a href="">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -749,7 +738,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="faq.html">
+                            <a href="../../faq.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -758,7 +747,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="error.html">
+                            <a href="../../error.html">
                                     <span class="icon-dash">
                                     </span>
                                 <span class="menu-text">
@@ -770,7 +759,7 @@
                 </li>
 
                 <li>
-                    <a href="support.html">
+                    <a href="../../support.html">
                             <span class="icon-menu feather-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-voicemail"><circle cx="5.5" cy="11.5" r="4.5"></circle><circle cx="18.5" cy="11.5" r="4.5"></circle><line x1="5.5" y1="16" x2="18.5" y2="16"></line></svg>
                             </span>
@@ -780,7 +769,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="documentation.html">
+                    <a href="../../documentation.html">
                             <span class="icon-menu feather-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-paperclip"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path></svg>
                             </span>
@@ -796,274 +785,64 @@
     <div class="page-wrapper">
         <div class="main-content">
             <!-- Page Title Start -->
+
+            <!-- Table Start -->
             <div class="row">
-                <div class="col xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                    <div class="page-title-wrapper">
-                        <div class="page-title-box">
-                            <h4 class="page-title">InserData</h4>
-                        </div>
-                        <div class="breadcrumb-list">
-                            <ul>
-                                <li class="breadcrumb-link">
-                                    <a href="javascript:void(0);"><i class="fas fa-home mr-2"></i>Dashboard</a>
-                                </li>
-                                <li class="breadcrumb-link active">InserData</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                <!-- Styled Table Card-->
+                <div class="col-xl-8 col-lg-8">
                     <div class="card">
-                        <div class="card-header">
-                            <h4 class="page-ti">IMAGE DATA SHOW</h4>
+                        <div class="card-header" style="text-align: center">
+                            <h2 >创建品牌信息</h2>
                         </div>
                         <div class="card-body">
-                            <form action="/updateImage.do" method="post">
-                                <input type="text" name="PicturesId" placeholder="${imageData.picturesId}" class="form-control">
-                                <input type="text" name="title" placeholder="${imageData.title}" class="form-control">
-                                <input type="text" name="name" placeholder="${imageData.name}" class="form-control">
-                                <input type="text" name="path" placeholder="${imageData.path}" class="form-control">
-                                <input type="text" name="createtime" placeholder="${imageData.createtime}" class="form-control">
-                                <input type="text" name="masterId" placeholder="${imageData.masterId}" class="form-control">
-                                <input type="text" name="bz" placeholder="${imageData.bz}" class="form-control">
-                                <button type="submit" class="btn btn-primary" >修改图片</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4>PLEASE INPUT YOUR DATA</h4>
-                        </div>
-                        <div class="card-body">
-                            <form action="/insertImage.do" method="post" name="formImage">
-                                <input type="text" name="PicturesId" placeholder="图片名字" class="form-control">
-                                <input type="text" name="title" placeholder="图片标题" class="form-control">
-                                <input type="text" name="name" placeholder="查找图片ID" class="form-control">
-                                <input type="text" name="path" placeholder="查找图片ID" class="form-control">
-                                <input type="text" name="createtime" placeholder="查找图片ID" class="form-control">
-                                <input type="text" name="masterId" placeholder="查找图片ID" class="form-control">
-                                <input type="text" name="bz" placeholder="查找图片ID" class="form-control">
-
-                                <button type="submit" class="btn btn-primary">添加图片</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <form action="/Newbrand.do">
                                 <div class="row">
-                                    <form action="/imagePath.do" method="post" name="formImage">
-                                        <input type="text" name="imagePath" placeholder="查找图片ID">
-                                        <button type="submit" class="btn btn-primary">查找</button>
-                                    </form>
-                                    <form action="/deleteImage.do" method="post" name="formImage">
-                                        <input type="text" name="deleteImageId" placeholder="删除图片ID">
-                                        <button type="submit" class="btn btn-danger">删除</button>
-                                    </form>
+                                    <div class="col-xl-12 col-lg-12">
+                                        <div class="form-group">
+                                            <label  class="col-form-label">公司名称（中文）</label>
+                                            <input class="form-control" type="text" name="nameCn" placeholder="">
+                                        </div>
+                                    </div>
+
                                 </div>
-                            </div>
+                                <div class="row">
+                                    <div class="col-xl-12 col-lg-12">
+                                        <div class="form-group">
+                                            <label  class="col-form-label">公司名称（英文）</label>
+                                            <input class="form-control" type="text" name="nameEn" placeholder="">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+                                    <label  class="col-form-label">品牌介绍</label>
+                                    <input class="form-control" type="text" name="createdBy" placeholder="" id="password-input">
+                                </div>
+
+                                <div class="form-group mb-0" style="text-align: center">
+                                    <button class="btn btn-primary squer-btn mt-2 mr-2" type="submit">保存</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Products view Start -->
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-
-                <form action="/uploadImage.do" method="post" enctype="multipart/form-data" >
-                    <img src="${imageName}">
-                    <p>${imageName}</p>
-                    <input type="file" name="file" value="选择图片">
-                    <input type="text" name="imageId" placeholder="输入要修改的iD">
-                    <input type="submit" class="btn btn-primary" value="上传图片">
-                </form>
-            </div>
 
 
-            <div class="ad-footer-btm">
-                <p>Copyright &copy; 2021.Company name All rights reserved.<a target="_blank" href="https://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
-            </div>
+
         </div>
     </div>
 </div>
-
 <!-- Slide Setting Box -->
-<div class="slide-setting-box">
-    <div class="slide-setting-holder">
-        <div class="setting-box-head">
-            <h4>General Settings</h4>
-            <a href="javascript:void(0);" class="close-btn">Close</a>
-        </div>
-        <div class="setting-box-body">
-            <div class="p-4">
-                <div class="switch-settings">
-                    <div class="d-flex mb-3">
-                        <span class="mr-auto fs-15">Notifications</span>
-                        <div class="checkbox checkbox-toggle">
-                            <input id="checkbox55" type="checkbox">
-                            <label for="checkbox55"></label>
-                        </div>
-                    </div>
-                    <div class="d-flex mb-3">
-                        <span class="mr-auto fs-15">Show your emails</span>
-                        <div class="checkbox checkbox-toggle">
-                            <input id="checkbox56" type="checkbox">
-                            <label for="checkbox56"></label>
-                        </div>
-                    </div>
-                    <div class="d-flex mb-3">
-                        <span class="mr-auto fs-15">Show Task statistics</span>
-                        <div class="checkbox checkbox-toggle">
-                            <input id="checkbox57" type="checkbox">
-                            <label for="checkbox57"></label>
-                        </div>
-                    </div>
-                    <div class="d-flex mb-3">
-                        <span class="mr-auto fs-15">Show recent activity</span>
-                        <div class="checkbox checkbox-toggle">
-                            <input id="checkbox58" type="checkbox">
-                            <label for="checkbox58"></label>
-                        </div>
-                    </div>
-                    <div class="d-flex mb-3">
-                        <span class="mr-auto fs-15">System Logs</span>
-                        <div class="checkbox checkbox-toggle">
-                            <input id="checkbox59" type="checkbox">
-                            <label for="checkbox59"></label>
-                        </div>
-                    </div>
-                    <div class="d-flex mb-3">
-                        <span class="mr-auto fs-15">Error Reporting</span>
-                        <div class="checkbox checkbox-toggle">
-                            <input id="checkbox60" type="checkbox">
-                            <label for="checkbox60"></label>
-                        </div>
-                    </div>
-                    <div class="d-flex mb-3">
-                        <span class="mr-auto fs-15">Show your status to all</span>
-                        <div class="checkbox checkbox-toggle">
-                            <input id="checkbox61" type="checkbox">
-                            <label for="checkbox61"></label>
-                        </div>
-                    </div>
-                    <div class="d-flex">
-                        <span class="mr-auto fs-15">Keep up to date</span>
-                        <div class="checkbox checkbox-toggle">
-                            <input id="checkbox62" type="checkbox">
-                            <label for="checkbox62"></label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="p-3 border-top border-bottom">
-            <h5 class="border-bottom-0 mb-0">Overview</h5>
-        </div>
-        <div class="p-4">
-            <div class="progress-wrapper">
-                <div class="mb-3">
-                    <p class="mb-2">Achieves<span class="float-right text-muted font-weight-normal">95%</span></p>
-                    <div class="progress h-1">
-                        <div class="progress-bar bg-primary col-3" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="progress-wrapper pt-2">
-                <div class="mb-3">
-                    <p class="mb-2">Projects<span class="float-right text-muted font-weight-normal">65%</span></p>
-                    <div class="progress">
-                        <div class="progress-bar bg-secondary col-3" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="progress-wrapper pt-2">
-                <div class="mb-3">
-                    <p class="mb-2">Earnings<span class="float-right text-muted font-weight-normal">55%</span></p>
-                    <div class="progress">
-                        <div class="progress-bar bg-success col-8" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="progress-wrapper pt-2">
-                <div class="mb-3">
-                    <p class="mb-2">Balance<span class="float-right text-muted font-weight-normal">50%</span></p>
-                    <div class="progress h-1">
-                        <div class="progress-bar bg-warning w-50 " role="progressbar"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="progress-wrapper pt-2">
-                <div class="mb-3">
-                    <p class="mb-2">Total Profits<span class="float-right text-muted font-weight-normal">80%</span></p>
-                    <div class="progress">
-                        <div class="progress-bar bg-info col-6" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="progress-wrapper pt-2">
-                <div class="mb-3">
-                    <p class="mb-2">Total Likes<span class="float-right text-muted font-weight-normal">75%</span></p>
-                    <div class="progress h-1">
-                        <div class="progress-bar bg-teal w-75" role="progressbar"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
 <!-- Color Setting -->
-<div id="style-switcher">
-    <div>
-        <ul class="colors">
-            <li>
-                <p class='colorchange' id='color'>
-                </p>
-            </li>
-            <li>
-                <p class='colorchange' id='color2'>
-                </p>
-            </li>
-            <li>
-                <p class='colorchange' id='color3'>
-                </p>
-            </li>
-            <li>
-                <p class='colorchange' id='color4'>
-                </p>
-            </li>
-            <li>
-                <p class='colorchange' id='color5'>
-                </p>
-            </li>
-            <li>
-                <p class='colorchange' id='style'>
-                </p>
-            </li>
-        </ul>
-    </div>
-    <div class="bottom">
-        <a href="" class="settings">
-            <i class="fa fa-cog" aria-hidden="true"></i>
-        </a>
-    </div>
-</div>
+
 <!-- Color Setting -->
 <!-- Script Start -->
 <script src="../../static/js/jquery.min.js"></script>
 <script src="../../static/js/popper.min.js"></script>
 <script src="../../static/js/bootstrap.min.js"></script>
-<script src="../../static/js/swiper.min.js"></script>
-<!-- Page Specific -->
-<script src="../../static/js/nice-select.min.js"></script>
-<!-- Custom Script -->
 <script src="../../static/js/custom.js"></script>
 </body>
 

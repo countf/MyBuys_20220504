@@ -26,4 +26,9 @@ public class ManManufacturerServiceImpl implements ManManufacturerService {
     public int saveManManufacturer(ManManufacturer manManufacturer) {
         return manManufacturerMapper.updateByPrimaryKey(manManufacturer);
     }
+
+    @Override
+    public int inserManManufacturer(ManManufacturer manManufacturer) {
+        return manManufacturerMapper.insertproduct(manManufacturer);
+    }
 }

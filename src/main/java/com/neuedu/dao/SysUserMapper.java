@@ -34,10 +34,10 @@ public interface SysUserMapper {
 
     @Insert({
             "insert into sys_user (USERNAME, ",
-            "PASSWORD, EMAIL,NAME,PHONE,MAN_BUYER_ID)",
+            "PASSWORD, EMAIL,NAME,PHONE,MAN_BUYER_ID,ROLE_ID)",
             "values (#{username,jdbcType=VARCHAR}, ",
             "#{password,jdbcType=VARCHAR},#{email,jdbcType=VARCHAR},#{name,jdbcType=VARCHAR},",
-            "#{phone,jdbcType=VARCHAR}, #{manBuyerId,jdbcType=INTEGER})"
+            "#{phone,jdbcType=VARCHAR}, #{manBuyerId,jdbcType=INTEGER},'2')"
     })
     int register(SysUser record);
 
@@ -101,6 +101,15 @@ public interface SysUserMapper {
     @UpdateProvider(type=SysUserSqlProvider.class, method="updateByPrimaryKeySelective")
     int updateByPrimaryKeySelective(SysUser record);
 
+
+    @Update({
+            "update sys_user",
+            "set LAST_LOGIN = now(),",
+            "IP = #{ip,jdbcType=VARCHAR} ",
+            "where USER_ID = #{userId,jdbcType=INTEGER} "
+    })
+    int updateLoginInfo(SysUser record);
+
     @Update({
         "update sys_user",
         "set USERNAME = #{username,jdbcType=VARCHAR},",
@@ -120,4 +129,23 @@ public interface SysUserMapper {
         "where USER_ID = #{userId,jdbcType=INTEGER}"
     })
     int updateByPrimaryKey(SysUser record);
+
+    @Update({
+            "update sys_user",
+            "set USERNAME = #{username,jdbcType=VARCHAR},",
+            "NAME = #{name,jdbcType=VARCHAR},",
+            "RIGHTS = #{rights,jdbcType=VARCHAR},",
+            "ROLE_ID = #{roleId,jdbcType=VARCHAR},",
+            "LAST_LOGIN = #{lastLogin,jdbcType=VARCHAR},",
+            "IP = #{ip,jdbcType=VARCHAR},",
+            "STATUS = #{status,jdbcType=VARCHAR},",
+            "BZ = #{bz,jdbcType=VARCHAR},",
+            "SKIN = #{skin,jdbcType=VARCHAR},",
+            "EMAIL = #{email,jdbcType=VARCHAR},",
+            "NUMBER = #{number,jdbcType=VARCHAR},",
+            "PHONE = #{phone,jdbcType=VARCHAR},",
+            "MAN_BUYER_ID = #{manBuyerId,jdbcType=INTEGER}",
+            "where USER_ID = #{userId,jdbcType=INTEGER}"
+    })
+    int updateMAN_BUYER_ID(SysUser record);
 }

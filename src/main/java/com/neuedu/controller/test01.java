@@ -11,6 +11,7 @@ import com.neuedu.service.ManManufacturerService;
 import com.neuedu.service.PicturesService;
 import com.neuedu.service.impl.BrdBrandServiceImpl;
 import org.apache.shiro.crypto.hash.SimpleHash;
+import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,12 +19,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.ModelAndView;
 
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.IOException;
+import java.sql.Date;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -98,21 +101,28 @@ public class test01 {
     }
 
     public static void main(String[] args) {
-//        HashMap<String, Integer> stringIntegerHashMap = new HashMap<>();
-//        stringIntegerHashMap.put("1",111);
-//        stringIntegerHashMap.put("2",222);
-//        stringIntegerHashMap.put("3",333);
-//        stringIntegerHashMap.put("4",444);
-//        Set<String> keySet = stringIntegerHashMap.keySet();
-//        Iterator<String> iterator = keySet.iterator();
-//        while (iterator.hasNext()){
-//            String next = iterator.next();
-//            System.out.printf("\n"+stringIntegerHashMap.get(next));
-//
-//        }
+
+        for (int i =0;i<5;i++){
+            System.out.println(i);
+        }
+
 
     }
 
+
+
+    @RequestMapping("/ArrayList.do")
+    public ModelAndView t01(ModelAndView modelAndView){
+        ArrayList<SysUser> sysUserArrayList = new ArrayList<>();
+        for (int i =0;i<3;i++){
+            SysUser sysUser = new SysUser();
+            sysUser.setUserId(i);
+            sysUserArrayList.add(sysUser);
+        }
+        modelAndView.addObject("list",sysUserArrayList);
+        modelAndView.setViewName("test");
+        return modelAndView;
+    }
 
 
 }

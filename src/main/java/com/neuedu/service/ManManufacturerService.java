@@ -9,4 +9,6 @@ public interface ManManufacturerService {
     public int newManManufacturer(ManManufacturer manManufacturer);
 
     public int saveManManufacturer(ManManufacturer manManufacturer);
+
+    public int inserManManufacturer(ManManufacturer manManufacturer);
 }
