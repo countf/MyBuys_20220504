@@ -1,3 +1,6 @@
+## English Introduction
+MyBuys is an open-source SSM(Spring+SpringMVC+MyBatis) e-commerce back-end management project, developed for programming learning only, non-commercial use.
+It realizes manufacturer management, brand management, picture upload, user register & login functions.
 ## 一、项目概述
 
 MyBuys 是基于 **SSM\(Spring\+SpringMVC\+MyBatis\)** 搭建的传统 JavaWeb 电商后台管理项目，适配 Tomcat 部署，实现**厂商管理、品牌管理、图片上传、用户注册登录**等基础电商后台功能，采用 Maven 依赖管理，前端 HTML\+JSP，数据库 MySQL。
@@ -107,7 +110,7 @@ jdbc.password=你的数据库密码
 
 1. IDEA 配置 Tomcat8\.5，部署项目上下文
 
-2. 启动 Tomcat，默认访问地址：`http://localhost:8080/项目名/index.html`
+2. 启动 Tomcat，默认访问地址：`http://localhost:8080/MyBuys/index.html`
 
 #### 4\.1 【重要】Tomcat 外置图片虚拟路径配置（图片回显必配）
 
@@ -123,26 +126,26 @@ jdbc.password=你的数据库密码
 
 ```xml
 <!-- path：前端访问虚拟路由前缀，docBase：图片真实本地磁盘存放路径 -->
-<Context path="/file" docBase="E:\test" reloadable="false"/>
+<Context path="/file" docBase="${your_local_upload_dir}" reloadable="false"/>
 ```
 
 - `path="/file"`：固定前端访问前缀，不可随意修改；
 
-- `docBase="E:\test"`：替换为项目实际图片保存目录；
+- `docBase="${your_local_upload_dir}"`：替换为项目实际图片保存目录；
 
 > 适配本项目开发路径示例：
 >
 >
 
 ```xml
-<Context path="/file" docBase="D:/study/java/javaweb/untitled/MyBuys_20220504/src/main/webapp/static/image" reloadable="false"/>
+<Context path="/file" docBase="/${your_local_upload_dir}/java/javaweb/untitled/MyBuys_20220504/src/main/webapp/static/image" reloadable="false"/>
 ```
 
 3. 修改配置文件后**重启 Tomcat 配置生效**。
 
 ##### 前端页面使用规则
 
-磁盘真实路径：`E:\test\test.jpg`
+磁盘真实路径：`${your_local_upload_dir}\test.jpg`
 页面 img 标签写法：
 
 ```html
@@ -190,3 +193,5 @@ jdbc.password=你的数据库密码
 
 3. 静态资源访问：`/static/xxx`直接浏览器访问图片、css、js 资源
 
+Open Source License: MIT
+Copyright (c)2026 countf, all codes open for study only.
