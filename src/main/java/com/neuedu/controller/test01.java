@@ -109,7 +109,18 @@ public class test01 {
 
     }
 
-
+    @RequestMapping("/testUserList.do")
+    public @ResponseBody String testUserList() {
+        ArrayList<SysUser> list = new ArrayList<>();
+        for (int i = 1; i <= 5; i++) {
+            SysUser user = new SysUser();
+            user.setUserId(i);
+            user.setUserName("测试用户" + i);
+            user.setLoginName("test" + i);
+            list.add(user);
+        }
+        return JSONObject.toJSONString(list);
+    }
 
     @RequestMapping("/ArrayList.do")
     public ModelAndView t01(ModelAndView modelAndView){
